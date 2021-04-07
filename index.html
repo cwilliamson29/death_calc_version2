@@ -1,14 +1,122 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Random Number generator</title>
+		<title>Death Calculator</title>
 
         <link rel="stylesheet" href="css/main.css" type="text/css">
-        
-		<script src="js/main.js"></script>
+
+		
 	</head>
 	
 	<body>
 
+        <div id="container">
+            <div id="contHeader">
+                <h1>Calculate the age you will DIE!</h1><br>
+                <p>Input your current age and then make the selections below of the food you eat and activities you do and then click calculate.</p>
+            </div>
+            <div id="ageCont">
+                <Label>Current Age:</Label><input id="currentAge" type="text"><br>
+                <p id="numError"></p><br>
+            </div>
+
+
+            <div id="optionsContainer">
+
+
+                <div id="opt1" class="OptionsColumn">
+                    <h3>//Bad Habits</h3><br>
+                    <button class="optButtons" id="fastFood" onclick="addHabit(fastFood, 7)"> I Eat Fast Food </button>
+                    <button class="optButtons" id="candy" onclick="addHabit(candy, 7)"> I Eat Candy</button>
+
+                    
+
+                    <input type="checkbox" id="iceCream" name="iceCream" value="">
+                    <label for="iceCream"> I eat ice cream.</label><br>
+
+                    <input type="checkbox" id="smoke" name="smoke" value="">
+                    <label for="smoke"> I smoke.</label><br>
+
+                    <input type="checkbox" id="coc" name="coc" value="">
+                    <label for="coc"> I do cocaine.</label><br>
+
+                    <input type="checkbox" id="alcohol" name="alcohol" value="">
+                    <label for="alcohol"> I drink alcohol.</label><br>
+
+                    <input type="checkbox" id="soda" name="soda" value="">
+                    <label for="soda"> I drink soda.</label><br>
+
+                    <input type="checkbox" id="eatAll" name="eatAll" value="">
+                    <label for="eatAll"> I eat all the time.</label><br>-->
+
+                </div>
+
+
+                <div id="opt2" class="OptionsColumn">
+                    <h3>//Good Habits</h3>
+
+                    <input type="checkbox" id="veggies" name="veggies" value="">
+                    <label for="veggies"> I eat my veggies.</label><br>
+
+                    <input type="checkbox" id="getSun" name="getSun" value="">
+                    <label for="getSun"> I get lots of Sun.</label><br>
+
+                    <input type="checkbox" id="noSugar" name="noSugar" value="">
+                    <label for="noSugar"> I eat NO sugar.</label><br>
+
+                    <input type="checkbox" id="superFood" name="superFood" value="">
+                    <label for="superFood"> I eat super foods.</label><br>
+                </div>
+
+
+
+                <div id="opt3" class="OptionsColumn">
+                    <h3>//Fitness Habits</h3>
+
+                    <input type="checkbox" id="exercise" name="exercise" value="">
+                    <label for="exercise"> I exercise.</label><br>
+                    
+                    <input type="checkbox" id="weightLift" name="weightLift" value="">
+                    <label for="weightLift"> I weight lift.</label><br>
+
+                    <input type="checkbox" id="overweight" name="overweight" value="">
+                    <label for="overweight"> I'm overweight.</label><br>
+                </div>
+
+
+            </div>
+
+            <div id="buttonCont">
+                <div>
+                    <h3 id="buttHead"></h3>
+                </div>
+                <div>
+                    <h3 id="buttHead2"></h3>
+                    
+                    <p id="error"> </p>
+                    <p id="total"></p>
+                </div>
+                <!--<button onclick="alertAge();">CALCULATE!</button>-->
+            </div>
+        </div>
+
+
+        
+        
+        <!--<button onclick="addHabit(candy, 7)">
+        add candy
+        </button>
+        
+        <div onclick="addHabit(sugar, 3)">
+        add sugar
+        </div>-->
+        
+        
+
+
+
     </body>
+    
+    <script src="js/main.js"></script>
+
 </html>

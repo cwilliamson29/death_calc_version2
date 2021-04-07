@@ -1,0 +1,90 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+
+ html, body {
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #container{
+      min-width: 30vw;
+      min-height: 55vh;
+      border-radius: 40px;
+      background-color: lightblue;
+      padding-bottom: 20px;
+  }
+  #contHeader{
+      width: 100%;
+      padding-top: 10px;
+      text-align: center;
+  }
+  #contHeader p{
+      margin: auto;
+      width: 75%;
+  }
+  #ageCont{
+      padding-top: 10px;
+      text-align: center;
+  }
+#currentAge{
+    width: 50px;
+}
+
+  #optionsContainer{
+      width: 100%;
+      height: auto;
+      display:flex;
+      justify-content: space-between;
+      flex-direction: row;
+      /*background-color: burlywood;*/
+  }
+  .OptionsColumn{
+      padding-left: 25px;
+      width:33%;
+      height: 200px;
+      text-align: left;
+      /*background-color: darkgoldenrod;*/
+  }
+  #opt1{
+      order:1;
+      /*background-color: cyan;*/
+  }
+  #opt2{
+      order:2;
+      /*background-color: darkblue;*/
+  }
+  #opt3{
+      order:3;
+      /*background-color: darkcyan;*/
+  }
+  .optButtons{
+      width: 90%;
+      border: 2px solid black;
+      border-radius: 5px;
+      background-color: #d3d3d3;
+      padding:3px;
+      margin-top: 5px;
+  }
+  .optButtons:hover{
+    background-color: darkgray;
+
+  }
+
+  #buttonCont{
+      text-align: center;
+      width:100%;
+  }
+  #buttonCont div{
+    padding-top: 7px;
+    text-align: center;
+    height: 35px;
+    width:100%;
+}
