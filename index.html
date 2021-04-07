@@ -16,7 +16,7 @@
                 <p>Input your current age and then make the selections below of the food you eat and activities you do and then click calculate.</p>
             </div>
             <div id="ageCont">
-                <Label>Current Age:</Label><input id="currentAge" type="text"><br>
+                <Label>Current Age:</Label><input type="text" value="26" id="currentAge" autocomplete="off"><br>
                 <p id="numError"></p><br>
             </div>
 
@@ -25,29 +25,19 @@
 
 
                 <div id="opt1" class="OptionsColumn">
-                    <h3>//Bad Habits</h3><br>
-                    <button class="optButtons" id="fastFood" onclick="addHabit(fastFood, 7)"> I Eat Fast Food </button>
-                    <button class="optButtons" id="candy" onclick="addHabit(candy, 7)"> I Eat Candy</button>
 
+                    <h3>//Bad Habits</h3>
                     
+                    <br>
 
-                    <input type="checkbox" id="iceCream" name="iceCream" value="">
-                    <label for="iceCream"> I eat ice cream.</label><br>
-
-                    <input type="checkbox" id="smoke" name="smoke" value="">
-                    <label for="smoke"> I smoke.</label><br>
-
-                    <input type="checkbox" id="coc" name="coc" value="">
-                    <label for="coc"> I do cocaine.</label><br>
-
-                    <input type="checkbox" id="alcohol" name="alcohol" value="">
-                    <label for="alcohol"> I drink alcohol.</label><br>
-
-                    <input type="checkbox" id="soda" name="soda" value="">
-                    <label for="soda"> I drink soda.</label><br>
-
-                    <input type="checkbox" id="eatAll" name="eatAll" value="">
-                    <label for="eatAll"> I eat all the time.</label><br>-->
+                    <button class="optButtons" id="fastFood" onclick="addHabit(fastFood, -3)"> I Eat Fast Food </button>
+                    <button class="optButtons" id="candy" onclick="addHabit(candy, -2)"> I Eat Candy</button>
+                    <button class="optButtons" id="iceCream" onclick="addHabit(iceCream, -2)"> I Eat Ice Cream</button>
+                    <button class="optButtons" id="smoke" onclick="addHabit(smoke, -7)"> I Smoke</button>
+                    <button class="optButtons" id="coc" onclick="addHabit(coc, -15)"> I do cocaine</button>
+                    <button class="optButtons" id="alcohol" onclick="addHabit(alcohol, -9)"> I drink alcohol</button>
+                    <button class="optButtons" id="soda" onclick="addHabit(soda, -2)"> I drink soda</button>
+                    <button class="optButtons" id="eatAll" onclick="addHabit(eatAll, -4)"> I eat all the time</button>
 
                 </div>
 
@@ -55,17 +45,14 @@
                 <div id="opt2" class="OptionsColumn">
                     <h3>//Good Habits</h3>
 
-                    <input type="checkbox" id="veggies" name="veggies" value="">
-                    <label for="veggies"> I eat my veggies.</label><br>
+                    <br>
 
-                    <input type="checkbox" id="getSun" name="getSun" value="">
-                    <label for="getSun"> I get lots of Sun.</label><br>
+                    <button class="optButtons" id="veggies" onclick="addHabit(veggies, 3)"> I eat my veggies</button>
+                    <button class="optButtons" id="getSun" onclick="addHabit(getSun, 2)"> I get lots of Sun</button>
+                    <button class="optButtons" id="noSugar" onclick="addHabit(noSugar, 5)"> I eat NO sugar</button>
+                    <button class="optButtons" id="superFood" onclick="addHabit(superFood, 4)"> I eat super foods</button>
+                    
 
-                    <input type="checkbox" id="noSugar" name="noSugar" value="">
-                    <label for="noSugar"> I eat NO sugar.</label><br>
-
-                    <input type="checkbox" id="superFood" name="superFood" value="">
-                    <label for="superFood"> I eat super foods.</label><br>
                 </div>
 
 
@@ -73,47 +60,25 @@
                 <div id="opt3" class="OptionsColumn">
                     <h3>//Fitness Habits</h3>
 
-                    <input type="checkbox" id="exercise" name="exercise" value="">
-                    <label for="exercise"> I exercise.</label><br>
-                    
-                    <input type="checkbox" id="weightLift" name="weightLift" value="">
-                    <label for="weightLift"> I weight lift.</label><br>
+                    <br>
 
-                    <input type="checkbox" id="overweight" name="overweight" value="">
-                    <label for="overweight"> I'm overweight.</label><br>
+                    <button class="optButtons" id="exercise" onclick="addHabit(exercise, 6)"> I exercise</button>
+                    <button class="optButtons" id="weightLift" onclick="addHabit(weightLift, 3)"> I weight lift</button>
+                    <button class="optButtons" id="overweight" onclick="addHabit(overweight, -7)"> I'm overweight</button>
+
                 </div>
 
 
             </div>
 
             <div id="buttonCont">
-                <div>
-                    <h3 id="buttHead"></h3>
-                </div>
-                <div>
-                    <h3 id="buttHead2"></h3>
-                    
-                    <p id="error"> </p>
-                    <p id="total"></p>
-                </div>
-                <!--<button onclick="alertAge();">CALCULATE!</button>-->
+                    <p id="announce"> </p>
+                    <br>
+                    <p id="total"> </p>
+                    <br>
+                    <p id="ageAfter"> </p>
             </div>
         </div>
-
-
-        
-        
-        <!--<button onclick="addHabit(candy, 7)">
-        add candy
-        </button>
-        
-        <div onclick="addHabit(sugar, 3)">
-        add sugar
-        </div>-->
-        
-        
-
-
 
     </body>
     

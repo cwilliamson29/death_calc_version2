@@ -15,7 +15,7 @@
   }
 
   #container{
-      min-width: 30vw;
+      width: 45vw;
       min-height: 55vh;
       border-radius: 40px;
       background-color: lightblue;
